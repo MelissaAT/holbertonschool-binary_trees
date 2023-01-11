@@ -4,7 +4,7 @@
  * @node: is a pointer to the node to check
  * Return: 1 if node is leaf otherwise 0
 */
-int binay_tree_is_leaf(const binary_tree_t *node)
+int binary_tree_is_leaf(const binary_tree_t *node)
 {
     if (node == NULL)
     {
