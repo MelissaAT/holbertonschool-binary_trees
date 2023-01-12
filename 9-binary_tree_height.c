@@ -1,5 +1,5 @@
 #include "binary_trees.h"
-size_t higher(size_t right_height size_t left_height);
+size_t higher(size_t right_height, size_t left_height);
 /**
  * binary_tree_height - function that ,easures the height of a binary tree
  * @tree: is a pointer to the root node of the tree to measure the height
@@ -31,16 +31,16 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 /**
  * higher - find the highest subtree
- * @rigth: right subtree
- * @left: left subtree
+ * @rigth_height: right subtree
+ * @left_height: left subtree
  * Return: the highest subtree
  */
 size_t higher(size_t right_height, size_t left_height)
 {
-	if (right > left)
+	if (right_height > left_height)
 	{
-		return (right);
+		return (right_height);
 	}
 	else
-		return (left);
+		return (left_height);
 }
