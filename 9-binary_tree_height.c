@@ -25,8 +25,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 /**
  * higher - find the highest subtree
- * @right_height: right subtree
- * @left_height: left subtree
+ * @right: right subtree
+ * @left: left subtree
  * Return: the highest subtree
  */
 size_t higher(size_t right, size_t left)
