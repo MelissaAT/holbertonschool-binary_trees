@@ -6,7 +6,7 @@
  * @func: is a pointer to a cunction to call for each node.
  * the value in the node must be passed as a parameter to this function
  */
-void binary_tree_preorder(const binary_tree_t *tree, void (*func))
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (tree == NULL || func == NULL)
 	{
