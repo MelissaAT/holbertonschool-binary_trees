@@ -35,7 +35,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
  * @left: left subtree
  * Return: the highest subtree
  */
-size_t higher(size_t right, size_t left)
+size_t higher(size_t right_height, size_t left_height)
 {
 	if (right > left)
 	{
